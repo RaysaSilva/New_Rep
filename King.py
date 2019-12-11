@@ -1,2 +1,2 @@
-print ("olá")
+print("olá")
 print('New branch')
