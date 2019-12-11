@@ -1,19 +1,30 @@
-from string import ascii_letters
-print("olá")
-print('New branch')
+frsone = "Why so serious ?" 
+print ("String 1:",frsone) 
+frstwo = "Run Florest, Run"
+nuone = len(frsone)
+nutwo = len(frstwo)
+t = "Tamanho de '%s' é {}" % (frsone)
+x = "Tamanho de '%s' é {}" % (frstwo)
+print ("String 2:", frstwo) 
+print (t.format (nuone))
+print (x.format(nutwo))
+if (len(frsone) != len(frstwo)):
+    print ("As duas strings são de tamanhos diferentes")
+else :
+ print("As duas strings são iguais") 
 
-frase = 'Ola, eu sou uma frase. Me quebre em palavras e conte quantas palavras eu contenho'
-lista_de_palavras = frase.split(' ')
-nova_palavra = ''
-lista = []
-for palavras in lista_de_palavras:
-    for letras in palavras:
-        if letras in ascii_letters:
-            nova_palavra = nova_palavra + letras
-    if nova_palavra not in lista:
-        lista.append(nova_palavra)
-        nova_palavra = ''
-        
-print(lista)
-print(len(lista))
-                
+if frsone == frstwo:
+    print('Iguais')
+else:
+    print('Diferente')
+if (x == True):
+    print("As duas strings possuem conteúdo iguais")
+else:
+    print("As duas strings possuem conteúdo diferente")
+
+
+
+
+
+   
+  
